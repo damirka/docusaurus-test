@@ -49,6 +49,20 @@
   Prism.languages['move'] = {
     comment: [
       {
+        // Comment that starts with `// ERROR`
+        // For better visibility in the book.
+        name: 'comment-starts-with-error',
+        pattern: /\/\/\s*error.*/i,
+        alias: 'error-comment',
+      },
+      {
+        // Comment that starts with `// ERROR`
+        // For better visibility in the book.
+        name: 'error-highlight-comment',
+        pattern: /\/\/\s+\^+.*/i,
+        alias: 'error-comment',
+      },
+      {
         name: 'line-comments',
         pattern: RegExp(/(^|[^\\])/.source + multilineComment),
         lookbehind: true,

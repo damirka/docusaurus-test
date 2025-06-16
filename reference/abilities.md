@@ -108,8 +108,8 @@ storage operations.
 To declare that a `struct` or `enum` has an ability, it is declared with `has <ability>` after the
 datatype name and either before or after the fields/variants. For example:
 
-```move
-{{#include ../../packages/reference/sources/abilities.move:annotating_datatypes}}
+```move file=packages/reference/sources/abilities.move anchor=annotating_datatypes
+
 ```
 
 In this case: `Ignorable*` has the `drop` ability. `Pair*` and `MyVec*` both have `copy`, `drop`,
@@ -176,8 +176,9 @@ public struct MyDataEnum has store {
 When abilities are annotated on a generic type, not all instances of that type are guaranteed to
 have that ability. Consider this struct declaration:
 
+<!-- file=packages/reference/sources/abilities.move anchor=conditional_abilities -->
 ```move
-{{#include ../../packages/reference/sources/abilities.move:conditional_abilities}}
+public struct Cup<T> has copy, drop, store, key { item: T }
 ```
 
 It might be very helpful if `Cup` could hold any type, regardless of its abilities. The type system
