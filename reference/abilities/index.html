@@ -11,8 +11,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.f7e39129.css">
-<script src="/docusaurus-test/assets/js/runtime~main.9efe541b.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.48f5d489.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/runtime~main.cdcf18e6.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.59d0d03d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -25,7 +25,7 @@ well as if and how values are used in storage (as defined by the specific deploy
 the notion of storage for the blockchain). This is implemented by gating access to certain bytecode
 instructions so that for a value to be used with the bytecode instruction, it must have the ability
 required (if one is required at all—not every instruction is gated by an ability).</p>
-<p>For Sui, <code>key</code> is used to signify an <a href="/docusaurus-test/reference/abilities/object">object</a>. Objects are the basic unit of
+<p>For Sui, <code>key</code> is used to signify an <a href="/docusaurus-test/reference/abilities/object.md">object</a>. Objects are the basic unit of
 storage where each object has a unique, 32-byte ID. <code>store</code> is then used to both indicate what data
 can be stored inside of an object, and is also used to indicate what types can be transferred
 outside of their defining module.</p>
@@ -45,7 +45,7 @@ outside of their defining module.</p>
 <li><a href="#store"><code>store</code></a>
 <ul>
 <li>Allows values of types with this ability to exist inside a value in storage.</li>
-<li>For Sui, <code>store</code> controls what data can be stored inside of an <a href="/docusaurus-test/reference/abilities/object">object</a>.
+<li>For Sui, <code>store</code> controls what data can be stored inside of an <a href="/docusaurus-test/reference/abilities/object.md">object</a>.
 <code>store</code> also controls what types can be transferred outside of their defining module.</li>
 </ul>
 </li>
@@ -54,7 +54,7 @@ outside of their defining module.</p>
 <li>Allows the type to serve as a &quot;key&quot; for storage. Ostensibly this means the value can be a
 top-level value in storage; in other words, it does not need to be contained in another value to
 be in storage.</li>
-<li>For Sui, <code>key</code> is used to signify an <a href="/docusaurus-test/reference/abilities/object">object</a>.</li>
+<li>For Sui, <code>key</code> is used to signify an <a href="/docusaurus-test/reference/abilities/object.md">object</a>.</li>
 </ul>
 </li>
 </ul>
@@ -83,8 +83,8 @@ directly gate an operation. Instead it gates the existence in storage when used 
 <code>key</code>.</p>
 <p>If a value has <code>store</code>, all values contained inside of that value have <code>store</code>.</p>
 <p>For Sui, <code>store</code> serves double duty. It controls what values can appear inside of an
-<a href="/docusaurus-test/reference/abilities/object">object</a>, and what objects can be
-<a href="/docusaurus-test/reference/abilities/object#transfer-rules">transferred</a> outside of their defining module.</p>
+<a href="/docusaurus-test/reference/abilities/object.md">object</a>, and what objects can be
+<a href="/docusaurus-test/reference/abilities/object.md#transfer-rules">transferred</a> outside of their defining module.</p>
 <h3 class="anchor anchorWithStickyNavbar_kl3l" id="key"><code>key</code><a href="#key" class="hash-link" aria-label="Direct link to key" title="Direct link to key">​</a></h3>
 <p>The <code>key</code> ability allows the type to serve as a key for storage operations as defined by the
 deployment of Move. While it is specific per Move instance, it serves to gates all storage
@@ -92,7 +92,7 @@ operations, so in order for a type to be used with storage primitives, the type 
 ability.</p>
 <p>If a value has <code>key</code>, all values contained inside of that value have <code>store</code>. This is the only
 ability with this sort of asymmetry.</p>
-<p>For Sui, <code>key</code> is used to signify an <a href="/docusaurus-test/reference/abilities/object">object</a>.</p>
+<p>For Sui, <code>key</code> is used to signify an <a href="/docusaurus-test/reference/abilities/object.md">object</a>.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="builtin-types">Builtin Types<a href="#builtin-types" class="hash-link" aria-label="Direct link to Builtin Types" title="Direct link to Builtin Types">​</a></h2>
 <p>All primitive, builtin types have <code>copy</code>, <code>drop</code>, and <code>store</code>.</p>
 <ul>
