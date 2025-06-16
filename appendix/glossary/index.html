@@ -10,9 +10,9 @@
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.f7e39129.css">
-<script src="/docusaurus-test/assets/js/runtime~main.cdcf18e6.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.bb650911.js" defer="defer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.ad711dd1.css">
+<script src="/docusaurus-test/assets/js/runtime~main.fd24a2e1.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.a61c18f8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -25,20 +25,20 @@ executed without the need for consensus.</li>
 <li>Parallel Execution - term used to describe the ability of the Sui runtime to execute transactions
 in parallel, including the ones that involve shared objects.</li>
 <li>Internal Type - type that is defined within the module. Fields of this type can not be accessed
-from outside the module, and, in case of &quot;key&quot;-only abilities, can not be used in <code>public_*</code>
+from outside the module, and, in case of &quot;key&quot;-only abilities, can not be used in <span class="inline-code">public_*</span>
 transfer functions.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="abilities">Abilities<a href="#abilities" class="hash-link" aria-label="Direct link to Abilities" title="Direct link to Abilities">​</a></h2>
 <ul>
 <li>key - ability that allows the struct to be used as a key in the storage. On Sui, the key ability
-marks an object and requires the first field to be a <code>id: UID</code>.</li>
+marks an object and requires the first field to be a <span class="inline-code">id: UID</span>.</li>
 <li>store - ability that allows the struct to be stored inside other objects. This ability relaxes
-restrictions applied to internal structs, allowing <code>public_*</code> transfer functions to accept them as
+restrictions applied to internal structs, allowing <span class="inline-code">public_*</span> transfer functions to accept them as
 arguments. It also enables the object to be stored as a dynamic field.</li>
-<li>copy - ability that allows the struct to be copied. On Sui, the <code>copy</code> ability conflicts with the
-<code>key</code> ability, and can not be used together with it.</li>
-<li>drop - ability that allows the struct to be ignored or discarded. On Sui, the <code>drop</code> ability
-cannot be used together with the <code>key</code> ability, as objects are not allowed to be ignored.</li>
+<li>copy - ability that allows the struct to be copied. On Sui, the <span class="inline-code">copy</span> ability conflicts with the
+<span class="inline-code">key</span> ability, and can not be used together with it.</li>
+<li>drop - ability that allows the struct to be ignored or discarded. On Sui, the <span class="inline-code">drop</span> ability
+cannot be used together with the <span class="inline-code">key</span> ability, as objects are not allowed to be ignored.</li>
 </ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docusaurus-test/guides/code-quality-checklist"><div class="pagination-nav__label"><i class="fa fa-angle-left"></i><span class="pagination-nav__label">Code Quality Checklist</span> </div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docusaurus-test/appendix/reserved-addresses"><div class="pagination-nav__label"><span class="pagination-nav__label">B. Reserved Addresses</span> <i class="fa fa-angle-right"></i></div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_VdoB thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#abilities" class="table-of-contents__link toc-highlight">Abilities</a></li></ul></div></div></div></div></main></div></div></div></div>
 </body>
 </html>

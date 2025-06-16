@@ -10,9 +10,9 @@
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.f7e39129.css">
-<script src="/docusaurus-test/assets/js/runtime~main.cdcf18e6.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.bb650911.js" defer="defer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.ad711dd1.css">
+<script src="/docusaurus-test/assets/js/runtime~main.fd24a2e1.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.a61c18f8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -39,7 +39,7 @@ attached to it using dynamic fields (eg Bag).</p>
 <p>The size of a single pure argument is limited to 16KB. A transaction argument bigger than this limit
 will result in execution failure. So in order to create a vector of more than ~500 addresses (given
 that a single address is 32 bytes), it needs to be joined dynamically either in Transaction Block or
-in a Move function. Standard functions like <code>vector::append()</code> can join two vectors of ~16KB
+in a Move function. Standard functions like <span class="inline-code">vector::append()</span> can join two vectors of ~16KB
 resulting in a ~32KB of data as a single value.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="maximum-number-of-objects-and-dynamic-fields-created">Maximum Number of Objects (and Dynamic Fields) Created<a href="#maximum-number-of-objects-and-dynamic-fields-created" class="hash-link" aria-label="Direct link to Maximum Number of Objects (and Dynamic Fields) Created" title="Direct link to Maximum Number of Objects (and Dynamic Fields) Created">​</a></h2>
 <p>The maximum number of objects that can be created in a single transaction is 2048. If a transaction
