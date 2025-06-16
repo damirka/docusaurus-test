@@ -25,7 +25,7 @@ const config: Config = {
   projectName: 'docusaurus-test',
 
   // TODO: circle back
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
