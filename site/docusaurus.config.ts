@@ -75,7 +75,7 @@ const config: Config = {
     [
       '@docusaurus/theme-classic',
       {
-        customCss: ['./src/css/custom.css', './src/fonts/fonts.css'],
+        customCss: ['./src/css/custom.css', './src/fonts/fonts.css', './src/css/inline-code.css'],
       },
     ],
     [
