@@ -1,0 +1,6 @@
+[package]
+name = "MoveBook"
+edition = "2024"
+
+[addresses]
+book = "0x0"
