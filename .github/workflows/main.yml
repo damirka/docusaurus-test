@@ -15,20 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v4
         with:
-          node-version: '20'
+          version: 9
           cache: 'pnpm'
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm i
         working-directory: ./site
       - name: Build website
-        run: pnpm run build
+        run: pnpm build
         working-directory: ./site
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
