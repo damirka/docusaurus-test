@@ -17,12 +17,12 @@ const config: Config = {
 
   // TODO: Add forwarding from old pages to new pages.
 
-  url: 'https://move-book.com',
-  baseUrl: '/',
+  url: 'https://damirka.github.io',
+  baseUrl: '/docusaurus-test/',
 
   // GitHub pages deployment config.
-  organizationName: 'MystenLabs',
-  projectName: 'move-book',
+  organizationName: 'damirka',
+  projectName: 'docusaurus-test',
 
   // TODO: circle back
   onBrokenLinks: 'throw',
