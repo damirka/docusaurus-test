@@ -18,7 +18,7 @@ const config: Config = {
   // TODO: Add forwarding from old pages to new pages.
 
   url: 'https://damirka.github.io',
-  baseUrl: '/docusaurus-test/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'damirka',
@@ -72,7 +72,12 @@ const config: Config = {
     ],
   ],
   themes: [
-    ['@docusaurus/theme-classic', { customCss: './src/css/custom.css' }],
+    [
+      '@docusaurus/theme-classic',
+      {
+        customCss: ['./src/css/custom.css', './src/fonts/fonts.css'],
+      },
+    ],
     [
       // See https://github.com/easyops-cn/docusaurus-search-local
       '@easyops-cn/docusaurus-search-local',
