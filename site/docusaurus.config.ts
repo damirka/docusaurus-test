@@ -18,7 +18,7 @@ const config: Config = {
   // TODO: Add forwarding from old pages to new pages.
 
   url: 'https://damirka.github.io',
-  baseUrl: '/',
+  baseUrl: '/docusaurus-test/',
 
   // GitHub pages deployment config.
   organizationName: 'damirka',
