@@ -75,7 +75,11 @@ const config: Config = {
     [
       '@docusaurus/theme-classic',
       {
-        customCss: ['./src/css/custom.css', './src/fonts/fonts.css', './src/css/inline-code.css'],
+        customCss: [
+          './src/css/custom.css',
+          './src/fonts/fonts.css',
+          './src/css/code.css',
+        ],
       },
     ],
     [
@@ -194,6 +198,16 @@ const config: Config = {
       additionalLanguages: ['ini', 'toml', 'bash'],
       theme: prismAtomOneLight,
       darkTheme: prismAtomOneDark,
+      magicComments: [
+        {
+          className: 'error-comment',
+          line: 'highlight-error',
+          block: {
+            start: 'highlight-error-start',
+            end: 'highlight-error-end',
+          },
+        },
+      ],
     },
     breadcrumbs: false,
   } satisfies Preset.ThemeConfig,

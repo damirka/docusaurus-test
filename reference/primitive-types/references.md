@@ -49,6 +49,7 @@ Finally, note that references to references are not allowed:
 ```move
 let x = 7;
 let y: &u64 = &x;
+// highlight-error
 let z: &&u64 = &y; // ERROR! will not compile
 ```
 
@@ -74,6 +75,7 @@ rule prevents the copying of assets:
 ```move
 fun copy_coin_via_ref_bad(c: Coin) {
     let c_ref = &c;
+    // highlight-error
     let counterfeit: Coin = *c_ref; // not allowed!
     pay(c);
     pay(counterfeit);
@@ -84,9 +86,10 @@ Dually: in order for a reference to be written to, the underlying type must have
 [`drop` ability](../abilities.md) as writing to the reference will discard (or "drop") the old
 value. This rule prevents the destruction of resource values:
 
-```move=
+```move
 fun destroy_coin_via_ref_bad(mut ten_coins: Coin, c: Coin) {
     let ref = &mut ten_coins;
+    // highlight-error
     *ref = c; // ERROR! not allowed--would destroy 10 coins!
 }
 ```
@@ -147,9 +150,11 @@ module a::example {
         let mut y: &mut u64 = &mut 1;
 
         x = &mut 1; // valid
+        // highlight-error
         y = &2; // ERROR! invalid!
 
         read_and_assign(y, x); // valid
+        // highlight-error
         read_and_assign(x, y); // ERROR! invalid!
     }
 }
