@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">Reference: Tuples and Unit | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/reference/primitive-types/tuples"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-reference-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-reference-current"><meta data-rh="true" property="og:title" content="Reference: Tuples and Unit | The Move Book"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/reference/primitive-types/tuples"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/primitive-types/tuples" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/primitive-types/tuples" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
+<title data-rh="true">Reference: Tuples and Unit | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/reference/primitive-types/tuples"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="algolia-site-verification" content="BCA21DA2879818D2"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-reference-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-reference-current"><meta data-rh="true" property="og:title" content="Reference: Tuples and Unit | The Move Book"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/reference/primitive-types/tuples"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/primitive-types/tuples" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/primitive-types/tuples" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1E7R0BHX4"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-B1E7R0BHX4",{})</script>
@@ -11,8 +11,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.eaa7b9bd.css">
-<script src="/docusaurus-test/assets/js/runtime~main.639c5728.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.708a2ccd.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/runtime~main.2f60e92b.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.f71606f3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -39,9 +39,9 @@ to unit.</p>
 most common use cases for tuples in other languages is for functions to allow functions to return
 multiple values. Some languages work around this by forcing the users to write structs that contain
 the multiple return values. However in Move, you cannot put references inside of
-<a href="/docusaurus-test/reference/structs">structs</a>. This required Move to support multiple return values. These multiple
-return values are all pushed on the stack at the bytecode level. At the source level, these multiple
-return values are represented using tuples.</p>
+<a href="/docusaurus-test/reference/structs">structs</a>. This required Move to support multiple return values. These multiple return
+values are all pushed on the stack at the bytecode level. At the source level, these multiple return
+values are represented using tuples.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="literals">Literals<a href="#literals" class="hash-link" aria-label="Direct link to Literals" title="Direct link to Literals">​</a></h2>
 <p>Tuples are created by a comma separated list of expressions inside of parentheses.</p>
 <table><thead><tr><th>Syntax</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><span class="inline-code">()</span></td><td><span class="inline-code">(): ()</span></td><td>Unit, the empty tuple, or the tuple of arity 0</td></tr><tr><td><span class="inline-code">(e1, ..., en)</span></td><td><span class="inline-code">(e1, ..., en): (T1, ..., Tn)</span> where <span class="inline-code">e_i: Ti</span> s.t. <span class="inline-code">0 &lt; i &lt;= n</span> and <span class="inline-code">n &gt; 0</span></td><td>A <span class="inline-code">n</span>-tuple, a tuple of arity <span class="inline-code">n</span>, a tuple with <span class="inline-code">n</span> elements</td></tr></tbody></table>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">Reference: Abilities | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/reference/abilities"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-reference-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-reference-current"><meta data-rh="true" property="og:title" content="Reference: Abilities | The Move Book"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/reference/abilities"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/abilities" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/abilities" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
+<title data-rh="true">Reference: Abilities | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/reference/abilities"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="algolia-site-verification" content="BCA21DA2879818D2"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-reference-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-reference-current"><meta data-rh="true" property="og:title" content="Reference: Abilities | The Move Book"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/reference/abilities"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/abilities" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/abilities" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1E7R0BHX4"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-B1E7R0BHX4",{})</script>
@@ -11,8 +11,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.eaa7b9bd.css">
-<script src="/docusaurus-test/assets/js/runtime~main.639c5728.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.708a2ccd.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/runtime~main.2f60e92b.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.f71606f3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -25,10 +25,10 @@ well as if and how values are used in storage (as defined by the specific deploy
 the notion of storage for the blockchain). This is implemented by gating access to certain bytecode
 instructions so that for a value to be used with the bytecode instruction, it must have the ability
 required (if one is required at all—not every instruction is gated by an ability).</p>
-<p>For Sui, <span class="inline-code">key</span> is used to signify an <a href="/docusaurus-test/reference/abilities/object.md">object</a>. Objects are the basic unit of
-storage where each object has a unique, 32-byte ID. <span class="inline-code">store</span> is then used to both indicate what data
-can be stored inside of an object, and is also used to indicate what types can be transferred
-outside of their defining module.</p>
+<p>For Sui, <span class="inline-code">key</span> is used to signify an <a href="/docusaurus-test/book/storage/key-ability">object</a>. Objects are the basic
+unit of storage where each object has a unique, 32-byte ID. <span class="inline-code">store</span> is then used to both indicate
+what data can be stored inside of an object, and is also used to indicate what types can be
+transferred outside of their defining module.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="the-four-abilities">The Four Abilities<a href="#the-four-abilities" class="hash-link" aria-label="Direct link to The Four Abilities" title="Direct link to The Four Abilities">​</a></h2>
 <p>The four abilities are:</p>
 <ul>
@@ -45,8 +45,9 @@ outside of their defining module.</p>
 <li><a href="#store"><span class="inline-code">store</span></a>
 <ul>
 <li>Allows values of types with this ability to exist inside a value in storage.</li>
-<li>For Sui, <span class="inline-code">store</span> controls what data can be stored inside of an <a href="/docusaurus-test/reference/abilities/object.md">object</a>.
-<span class="inline-code">store</span> also controls what types can be transferred outside of their defining module.</li>
+<li>For Sui, <span class="inline-code">store</span> controls what data can be stored inside of an
+<a href="/docusaurus-test/book/storage/key-ability">object</a>. <span class="inline-code">store</span> also controls what types can be transferred
+outside of their defining module.</li>
 </ul>
 </li>
 <li><a href="#key"><span class="inline-code">key</span></a>
@@ -54,14 +55,14 @@ outside of their defining module.</p>
 <li>Allows the type to serve as a &quot;key&quot; for storage. Ostensibly this means the value can be a
 top-level value in storage; in other words, it does not need to be contained in another value to
 be in storage.</li>
-<li>For Sui, <span class="inline-code">key</span> is used to signify an <a href="/docusaurus-test/reference/abilities/object.md">object</a>.</li>
+<li>For Sui, <span class="inline-code">key</span> is used to signify an <a href="/docusaurus-test/reference/abilities/object">object</a>.</li>
 </ul>
 </li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_kl3l" id="copy"><span class="inline-code">copy</span><a href="#copy" class="hash-link" aria-label="Direct link to copy" title="Direct link to copy">​</a></h3>
 <p>The <span class="inline-code">copy</span> ability allows values of types with that ability to be copied. It gates the ability to
-copy values out of local variables with the <a href="/docusaurus-test/reference/variables#move-and-copy"><span class="inline-code">copy</span></a> operator and to
-copy values via references with
+copy values out of local variables with the <a href="/docusaurus-test/reference/variables#move-and-copy"><span class="inline-code">copy</span></a> operator and to copy
+values via references with
 <a href="/docusaurus-test/reference/primitive-types/references#reading-and-writing-through-references">dereference <span class="inline-code">*e</span></a>.</p>
 <p>If a value has <span class="inline-code">copy</span>, all values contained inside of that value have <span class="inline-code">copy</span>.</p>
 <h3 class="anchor anchorWithStickyNavbar_kl3l" id="drop"><span class="inline-code">drop</span><a href="#drop" class="hash-link" aria-label="Direct link to drop" title="Direct link to drop">​</a></h3>
@@ -83,8 +84,8 @@ directly gate an operation. Instead it gates the existence in storage when used 
 <span class="inline-code">key</span>.</p>
 <p>If a value has <span class="inline-code">store</span>, all values contained inside of that value have <span class="inline-code">store</span>.</p>
 <p>For Sui, <span class="inline-code">store</span> serves double duty. It controls what values can appear inside of an
-<a href="/docusaurus-test/reference/abilities/object.md">object</a>, and what objects can be
-<a href="/docusaurus-test/reference/abilities/object.md#transfer-rules">transferred</a> outside of their defining module.</p>
+<a href="/docusaurus-test/book/storage/store-ability">object</a>, and what objects can be
+<a href="/docusaurus-test/reference/abilities/object#transfer-rules">transferred</a> outside of their defining module.</p>
 <h3 class="anchor anchorWithStickyNavbar_kl3l" id="key"><span class="inline-code">key</span><a href="#key" class="hash-link" aria-label="Direct link to key" title="Direct link to key">​</a></h3>
 <p>The <span class="inline-code">key</span> ability allows the type to serve as a key for storage operations as defined by the
 deployment of Move. While it is specific per Move instance, it serves to gates all storage
@@ -92,7 +93,7 @@ operations, so in order for a type to be used with storage primitives, the type 
 ability.</p>
 <p>If a value has <span class="inline-code">key</span>, all values contained inside of that value have <span class="inline-code">store</span>. This is the only
 ability with this sort of asymmetry.</p>
-<p>For Sui, <span class="inline-code">key</span> is used to signify an <a href="/docusaurus-test/reference/abilities/object.md">object</a>.</p>
+<p>For Sui, <span class="inline-code">key</span> is used to signify an <a href="/docusaurus-test/book/storage/key-ability">object</a>.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="builtin-types">Builtin Types<a href="#builtin-types" class="hash-link" aria-label="Direct link to Builtin Types" title="Direct link to Builtin Types">​</a></h2>
 <p>All primitive, builtin types have <span class="inline-code">copy</span>, <span class="inline-code">drop</span>, and <span class="inline-code">store</span>.</p>
 <ul>

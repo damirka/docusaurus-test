@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">Pattern: Witness | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/programmability/witness-pattern"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-book-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-book-current"><meta data-rh="true" property="og:title" content="Pattern: Witness | The Move Book"><meta data-rh="true" name="description" content="Witness is a pattern of proving an existence by constructing a proof. In the context of programming,"><meta data-rh="true" property="og:description" content="Witness is a pattern of proving an existence by constructing a proof. In the context of programming,"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/programmability/witness-pattern"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/programmability/witness-pattern" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/programmability/witness-pattern" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
+<title data-rh="true">Pattern: Witness | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/programmability/witness-pattern"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="algolia-site-verification" content="BCA21DA2879818D2"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-book-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-book-current"><meta data-rh="true" property="og:title" content="Pattern: Witness | The Move Book"><meta data-rh="true" name="description" content="Witness is a pattern of proving an existence by constructing a proof. In the context of programming,"><meta data-rh="true" property="og:description" content="Witness is a pattern of proving an existence by constructing a proof. In the context of programming,"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/programmability/witness-pattern"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/programmability/witness-pattern" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/programmability/witness-pattern" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1E7R0BHX4"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-B1E7R0BHX4",{})</script>
@@ -11,8 +11,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.eaa7b9bd.css">
-<script src="/docusaurus-test/assets/js/runtime~main.639c5728.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.708a2ccd.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/runtime~main.2f60e92b.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.f71606f3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -23,10 +23,10 @@
 witness is a way to prove a certain property of a system by providing a value that can only be
 constructed if the property holds.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="witness-in-move">Witness in Move<a href="#witness-in-move" class="hash-link" aria-label="Direct link to Witness in Move" title="Direct link to Witness in Move">​</a></h2>
-<p>In the <a href="/docusaurus-test/move-basics/struct">Struct</a> section we have shown that a struct can only be
-created - or <em>packed</em> - by the module defining it. Hence, in Move, a module proves ownership of the
-type by constructing it. This is one of the most important patterns in Move, and it is widely used
-for generic type instantiation and authorization.</p>
+<p>In the <a href="/docusaurus-test/move-basics/struct">Struct</a> section we have shown that a struct can only be created -
+or <em>packed</em> - by the module defining it. Hence, in Move, a module proves ownership of the type by
+constructing it. This is one of the most important patterns in Move, and it is widely used for
+generic type instantiation and authorization.</p>
 <p>Practically speaking, for the witness to be used, there has to be a function that expects a witness
 as an argument. In the example below it is the <span class="inline-code">new</span> function that expects a witness of the <span class="inline-code">T</span> type
 to create a <span class="inline-code">Instance&lt;T&gt;</span> instance.</p>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">Publisher Authority | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/programmability/publisher"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-book-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-book-current"><meta data-rh="true" property="og:title" content="Publisher Authority | The Move Book"><meta data-rh="true" name="description" content="In application design and development, it is often needed to prove publisher authority. This is"><meta data-rh="true" property="og:description" content="In application design and development, it is often needed to prove publisher authority. This is"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/programmability/publisher"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/programmability/publisher" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/programmability/publisher" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
+<title data-rh="true">Publisher Authority | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/programmability/publisher"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="algolia-site-verification" content="BCA21DA2879818D2"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-book-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-book-current"><meta data-rh="true" property="og:title" content="Publisher Authority | The Move Book"><meta data-rh="true" name="description" content="In application design and development, it is often needed to prove publisher authority. This is"><meta data-rh="true" property="og:description" content="In application design and development, it is often needed to prove publisher authority. This is"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/programmability/publisher"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/programmability/publisher" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/programmability/publisher" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1E7R0BHX4"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-B1E7R0BHX4",{})</script>
@@ -11,8 +11,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.eaa7b9bd.css">
-<script src="/docusaurus-test/assets/js/runtime~main.639c5728.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.708a2ccd.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/runtime~main.2f60e92b.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.f71606f3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -22,8 +22,7 @@
 <p>In application design and development, it is often needed to prove publisher authority. This is
 especially important in the context of digital assets, where the publisher may enable or disable
 certain features for their assets. The Publisher Object is an object, defined in the
-<a href="/docusaurus-test/programmability/sui-framework">Sui Framework</a>, that allows the publisher to prove their <em>authority over a
-type</em>.</p>
+<a href="/docusaurus-test/programmability/sui-framework">Sui Framework</a>, that allows the publisher to prove their <em>authority over a type</em>.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="definition">Definition<a href="#definition" class="hash-link" aria-label="Direct link to Definition" title="Direct link to Definition">​</a></h2>
 <p>The Publisher object is defined in the <span class="inline-code">sui::package</span> module of the Sui Framework. It is a very
 simple, non-generic object that can be initialized once per module (and multiple times per package)
@@ -51,9 +50,9 @@ by anyone else. And due to <span class="inline-code">Publisher</span> object bei
 access if the <span class="inline-code">from_module</span> check is not performed. So it&#x27;s important to be cautious when using the
 <span class="inline-code">Publisher</span> object as an admin role.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="role-on-sui">Role on Sui<a href="#role-on-sui" class="hash-link" aria-label="Direct link to Role on Sui" title="Direct link to Role on Sui">​</a></h2>
-<p>Publisher is required for certain features on Sui. <a href="/docusaurus-test/programmability/display">Object Display</a> can be created
-only by the Publisher, and TransferPolicy - an important component of the Kiosk system - also
-requires the Publisher object to prove ownership of the type.</p>
+<p>Publisher is required for certain features on Sui. <a href="/docusaurus-test/programmability/display">Object Display</a> can be created only
+by the Publisher, and TransferPolicy - an important component of the Kiosk system - also requires
+the Publisher object to prove ownership of the type.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
 <p>In the next chapter we will cover the first feature that requires the Publisher object - Object
 Display - a way to describe objects for clients, and standardize metadata. A must-have for

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">Reference: Generics | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/reference/generics"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-reference-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-reference-current"><meta data-rh="true" property="og:title" content="Reference: Generics | The Move Book"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/reference/generics"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/generics" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/generics" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
+<title data-rh="true">Reference: Generics | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/reference/generics"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="algolia-site-verification" content="BCA21DA2879818D2"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-reference-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-reference-current"><meta data-rh="true" property="og:title" content="Reference: Generics | The Move Book"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/reference/generics"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/generics" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/generics" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1E7R0BHX4"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-B1E7R0BHX4",{})</script>
@@ -11,8 +11,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.eaa7b9bd.css">
-<script src="/docusaurus-test/assets/js/runtime~main.639c5728.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.708a2ccd.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/runtime~main.2f60e92b.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.f71606f3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -106,10 +106,10 @@ appear in any of the fields defined in <span class="inline-code">Coin</span>.</p
 <h3 class="anchor anchorWithStickyNavbar_kl3l" id="phantom-type-parameters">Phantom Type Parameters<a href="#phantom-type-parameters" class="hash-link" aria-label="Direct link to Phantom Type Parameters" title="Direct link to Phantom Type Parameters">​</a></h3>
 <p>In the example above, although <span class="inline-code">struct Coin</span> asks for the <span class="inline-code">store</span> ability, neither <span class="inline-code">Coin&lt;A&gt;</span> nor
 <span class="inline-code">Coin&lt;B&gt;</span> will have the <span class="inline-code">store</span> ability. This is because of the rules for
-<a href="/docusaurus-test/reference/abilities#conditional-abilities-and-generic-types">Conditional Abilities and Generic Types</a>
-and the fact that <span class="inline-code">A</span> and <span class="inline-code">B</span> don&#x27;t have the <span class="inline-code">store</span> ability, despite the fact that they are not
-even used in the body of <span class="inline-code">struct Coin</span>. This might cause some unpleasant consequences. For example,
-we are unable to put <span class="inline-code">Coin&lt;A&gt;</span> into a wallet in storage.</p>
+<a href="/docusaurus-test/reference/abilities#conditional-abilities-and-generic-types">Conditional Abilities and Generic Types</a> and
+the fact that <span class="inline-code">A</span> and <span class="inline-code">B</span> don&#x27;t have the <span class="inline-code">store</span> ability, despite the fact that they are not even
+used in the body of <span class="inline-code">struct Coin</span>. This might cause some unpleasant consequences. For example, we
+are unable to put <span class="inline-code">Coin&lt;A&gt;</span> into a wallet in storage.</p>
 <p>One possible solution would be to add spurious ability annotations to <span class="inline-code">A</span> and <span class="inline-code">B</span> (i.e.,
 <span class="inline-code">public struct Currency1 has store {}</span>). But, this might lead to bugs or security vulnerabilities
 because it weakens the types with unnecessary ability declarations. For example, we would never

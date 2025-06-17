@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
-<title data-rh="true">Reference: Packages | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/reference/packages"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-reference-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-reference-current"><meta data-rh="true" property="og:title" content="Reference: Packages | The Move Book"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/reference/packages"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/packages" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/packages" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
+<title data-rh="true">Reference: Packages | The Move Book</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://damirka.github.io/docusaurus-test/reference/packages"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="algolia-site-verification" content="BCA21DA2879818D2"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-reference-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-reference-current"><meta data-rh="true" property="og:title" content="Reference: Packages | The Move Book"><link data-rh="true" rel="icon" href="/docusaurus-test/favicon.svg"><link data-rh="true" rel="canonical" href="https://damirka.github.io/docusaurus-test/reference/packages"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/packages" hreflang="en"><link data-rh="true" rel="alternate" href="https://damirka.github.io/docusaurus-test/reference/packages" hreflang="x-default"><link rel="preconnect" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1E7R0BHX4"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-B1E7R0BHX4",{})</script>
@@ -11,8 +11,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;amp;display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/docusaurus-test/assets/css/styles.eaa7b9bd.css">
-<script src="/docusaurus-test/assets/js/runtime~main.639c5728.js" defer="defer"></script>
-<script src="/docusaurus-test/assets/js/main.708a2ccd.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/runtime~main.2f60e92b.js" defer="defer"></script>
+<script src="/docusaurus-test/assets/js/main.f71606f3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -66,10 +66,10 @@ instantiates the named address <span class="inline-code">std</span> from the <sp
 difficult to understand so we examine them in more detail in
 <a href="#named-addresses-during-compilation">Named Addresses During Compilation</a>.</p>
 <h2 class="anchor anchorWithStickyNavbar_kl3l" id="named-addresses-during-compilation">Named Addresses During Compilation<a href="#named-addresses-during-compilation" class="hash-link" aria-label="Direct link to Named Addresses During Compilation" title="Direct link to Named Addresses During Compilation">​</a></h2>
-<p>Recall that Move has <a href="/docusaurus-test/reference/primitive-types/address">named addresses</a> and that named addresses cannot
-be declared in Move. Instead they are declared at the package level: in the manifest file
-(<span class="inline-code">Move.toml</span>) for a Move package you declare named addresses in the package, instantiate other named
-addresses, and rename named addresses from other packages within the Move package system.</p>
+<p>Recall that Move has <a href="/docusaurus-test/reference/primitive-types/address">named addresses</a> and that named addresses cannot be
+declared in Move. Instead they are declared at the package level: in the manifest file (<span class="inline-code">Move.toml</span>)
+for a Move package you declare named addresses in the package, instantiate other named addresses,
+and rename named addresses from other packages within the Move package system.</p>
 <p>Let&#x27;s go through each of these actions, and how they are performed in the package&#x27;s manifest
 one-by-one:</p>
 <h3 class="anchor anchorWithStickyNavbar_kl3l" id="declaring-named-addresses">Declaring Named Addresses<a href="#declaring-named-addresses" class="hash-link" aria-label="Direct link to Declaring Named Addresses" title="Direct link to Declaring Named Addresses">​</a></h3>
