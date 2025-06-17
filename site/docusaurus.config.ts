@@ -75,11 +75,7 @@ const config: Config = {
     [
       '@docusaurus/theme-classic',
       {
-        customCss: [
-          './src/css/custom.css',
-          './src/fonts/fonts.css',
-          './src/css/code.css',
-        ],
+        customCss: ['./src/css/custom.css', './src/fonts/fonts.css', './src/css/code.css'],
       },
     ],
     [
@@ -123,6 +119,12 @@ const config: Config = {
     colorMode: {
       disableSwitch: false,
     },
+    metadata: [
+      {
+        name: 'algolia-site-verification',
+        content: 'BCA21DA2879818D2',
+      },
+    ],
     navbar: {
       items: [
         {
